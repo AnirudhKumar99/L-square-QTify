@@ -6,7 +6,7 @@ function AlbumCard({ album, isSongsSection }) {
   const imageUrl = album?.image;
   const count = isSongsSection ? album?.likes : album?.follows;
   const albumName = album?.title;
-  console.log(isSongsSection,album.likes)
+  // console.log(isSongsSection,album.likes)
   return (
     <div className="album-card">
       <div className="album-image-container">

@@ -94,7 +94,7 @@ function Section({
         <Carousel items={albums} type="album" />
       ) : (
         <div className="albums-grid">
-          {albums.map((album) => (
+          {albums.slice(0,6).map((album) => (
             <AlbumCard key={album.id} album={album} />
           ))}
         </div>

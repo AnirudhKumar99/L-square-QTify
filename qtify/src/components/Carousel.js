@@ -13,11 +13,11 @@ function Carousel({ items, isSongsSection }) {
     slidesPerView: 5,
     spaceBetween: 20,
     breakpoints: {
-      320: { slidesPerView: 1 },
-      640: { slidesPerView: 2 },
-      992: { slidesPerView: 3 },
-      1200: { slidesPerView: 4 },
-      1400: { slidesPerView: 5 },
+      320: { slidesPerView: 2 },
+      640: { slidesPerView: 3 },
+      992: { slidesPerView: 4 },
+      1200: { slidesPerView: 5 },
+      1400: { slidesPerView: 6 },
     },
   };
 
