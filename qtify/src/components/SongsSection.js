@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Tabs, Tab } from "@mui/material";
-import Carousel from "./Carousel";
 import Section from "./Section";
 import "./SongsSection.css";
-import Box from "@mui/material/Box";
+
 const SongsSection = () => {
   const [genres, setGenres] = useState([]);
   const [songs, setSongs] = useState([]);

@@ -1,15 +1,3 @@
-// import React from 'react';
-// import RightArrowIcon from '../assets/right_arrow.svg'
-// import './CarouselButton.css';
-
-// function RightArrowButton({onClick}) {
-//   return (
-//     <img src={RightArrowIcon}  alt="Next" className="swiper-button-next" />
-//   );
-// }
-
-// export default RightArrowButton;
-
 import React from 'react';
 import RightArrowIcon from '../assets/right_arrow.svg';
 import './CarouselButton.css';
