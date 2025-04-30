@@ -19,13 +19,9 @@ function Section({
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [showAll, setShowAll] = useState(false);
+  const initialAlbumDisplayCount = 6;
 
   useEffect(() => {
-    // if(isSongsSection){
-    //   // console.log("fronm songs");
-    //   // return;
-    //   apiUrl="https://qtify-backend-labs.crio.do/songs"
-    // }
     const fetchAlbums = async () => {
       try {
         const response = await axios.get(
@@ -41,7 +37,7 @@ function Section({
     };
 
     fetchAlbums();
-  }, [apiUrl]);
+  }, [apiUrl,isSongsSection]);
 
   const toggleShowAll = () => {
     setShowAll(!showAll);
@@ -58,7 +54,7 @@ function Section({
     <div className="section-container">
       <div className="section-header">
         <h2>{title}</h2>
-        {!isSongsSection && albums.length > 6 && (
+        {!isSongsSection && albums.length > initialAlbumDisplayCount && (
           <button className="collapse-button" onClick={toggleShowAll}>
             {showAll ? "Show All" : "Collapse"}
           </button>
@@ -98,7 +94,7 @@ function Section({
         <Carousel items={albums} type="album" />
       ) : (
         <div className="albums-grid">
-          {albums.map((album) => (
+          {albums.slice(0, initialAlbumDisplayCount).map((album) => (
             <AlbumCard key={album.id} album={album} />
           ))}
         </div>
