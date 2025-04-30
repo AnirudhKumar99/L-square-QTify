@@ -1,5 +1,5 @@
 import React from 'react';
-import './FeedbackButton.css';
+import './Button.css';
 
 function FeedbackButton() {
   return (

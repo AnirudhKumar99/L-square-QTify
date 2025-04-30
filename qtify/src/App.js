@@ -1,7 +1,7 @@
 import './App.css';
 
-import Navbar from './components/NavBar';
-import Hero from './components/Hero';
+import Navbar from './components/Navbar/Navbar'
+import Hero from './components/Hero/Hero';
 function App() {
   return (
     <div className="App">

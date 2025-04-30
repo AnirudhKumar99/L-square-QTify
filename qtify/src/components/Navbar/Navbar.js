@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 import Logo from "../Logo/Logo";
 import Search from "../Search/Search";
 import styles from "./Navbar.module.css";
-import FeedbackButton from './FeedbackButton'
+// import FeedbackButton from './Button/Button'
 
 function Navbar({ searchData }) {
   return (
@@ -16,8 +16,7 @@ function Navbar({ searchData }) {
         placeholder="Search a song of your choice"
         searchData={searchData}
       />
-      {/* <Button>Give Feedback</Button> */}
-      <FeedbackButton/>
+      <Button>Give Feedback</Button>
     </nav>
   );
 }

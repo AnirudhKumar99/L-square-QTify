@@ -2,6 +2,7 @@
     background-color: var(--color-black);
     height: 270px;
     display: flex;
+    color: #ffffff;
     justify-content: center;
     align-items: center;
     text-align: center;
