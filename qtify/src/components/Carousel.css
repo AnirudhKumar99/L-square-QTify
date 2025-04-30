@@ -1,0 +1,47 @@
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  /* overflow: visible; */
+  margin-bottom: 20px;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  width: auto;
+  flex-shrink: 0;
+}
+
+.swiper-buttons {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    transform: translateY(-50%);
+    z-index: 100;
+    /* pointer-events: none; */
+  }
+  
+
+.swiper-button-prev,
+.swiper-button-next {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100; 
+  pointer-events: auto;
+}
+
+.swiper-button-disabled {
+  opacity: 0.5;
+  cursor: default;
+}

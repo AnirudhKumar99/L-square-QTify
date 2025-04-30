@@ -1,0 +1,28 @@
+.songs-section {
+  padding: 20px 0;
+}
+
+.songs-tabs {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #34c94b;
+}
+
+.songs-tab {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-transform: none;
+  min-width: 100px;
+  font-size: 1rem;
+}
+
+.songs-tab.Mui-selected {
+  color: #34c94b;
+  font-weight: 600;
+}
+
+.MuiTabs-indicator {
+  background-color: #34c94b !important;
+  height: 3px;
+  border-radius: 3px 3px 0 0;
+}
