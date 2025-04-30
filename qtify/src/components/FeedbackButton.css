@@ -1,0 +1,16 @@
+.feedback-button {
+    background-color: #121212;
+    color: #34c94b;
+    border: 2px solid #34c94b;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.9em;
+  }
+  
+  .feedback-button:hover {
+    background-color: #34c94b;
+    color: #121212;
+  }
