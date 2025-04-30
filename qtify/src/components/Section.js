@@ -18,11 +18,12 @@ function Section({
   const [albums, setAlbums] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [showAll, setShowAll] = useState(false);
+  const [showAll, setShowAll] = useState(true);
   const initialAlbumDisplayCount = 6;
 
   useEffect(() => {
     const fetchAlbums = async () => {
+      debugger;
       try {
         const response = await axios.get(
           !isSongsSection ? apiUrl : "https://qtify-backend-labs.crio.do/songs"
