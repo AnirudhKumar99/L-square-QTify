@@ -37,13 +37,13 @@
   justify-content: center;
   z-index: 100;
   pointer-events: auto;
-  width: 40px; /* Ensure a defined width */
-  height: 40px; /* Ensure a defined height, less than 100px */
-  border-radius: 50%; /* Make it circular */
+  width: 40px;
+  height: 40px; 
+  border-radius: 50%; 
+  /* display: none !important; */
 }
 
 .swiper-button-next {
-  /* Position it on the right */
   position: absolute;
   right: 10px; /* Adjust as needed */
   top: 50%;
@@ -67,13 +67,4 @@
   width: 100%; /* Make the icon fill the button */
   height: 100%;
   object-fit: contain; /* Ensure the icon fits within the bounds */
-}
-
-/* Add this class to your button for easier targeting in the test */
-.carousel-nav-button {
-  /* Add any common styles if needed */
-}
-
-.next {
-  /* Add any specific styles for the next button if needed */
 }
