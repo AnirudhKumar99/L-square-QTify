@@ -24,6 +24,7 @@ function Carousel({ items, isSongsSection }) {
 
   return (
     <div className="carousel-container">
+    <p style={{color:"white"}}>{items.length}</p>
       <Swiper
         {...params}
         onSwiper={(swiper) => {
