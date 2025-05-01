@@ -13,18 +13,17 @@ function Carousel({ items, isSongsSection }) {
     slidesPerView: 2, 
     spaceBetween: 20,
     loop: true,
-    // breakpoints: {
-    //   320: { slidesPerView: 1 },
-    //   640: { slidesPerView: 2 },
-    //   992: { slidesPerView: 3 },
-    //   1200: { slidesPerView: 4 },
-    //   1400: { slidesPerView: 5 },
-    // },
+    breakpoints: {
+      320: { slidesPerView: 1 },
+      640: { slidesPerView: 2 },
+      992: { slidesPerView: 3 },
+      1200: { slidesPerView: 4 },
+      1400: { slidesPerView: 5 },
+    },
   };
 
   return (
     <div className="carousel-container">
-    <p style={{color:"white"}}>{items.length}</p>
       <Swiper
         {...params}
         onSwiper={(swiper) => {
