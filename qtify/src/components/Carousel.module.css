@@ -9,6 +9,8 @@
     top: 40%;
     transform: translateY(-50%);
     z-index: 10;
+    cursor: pointer;
+    pointer-events: auto;
 }
 
 .rightNavigation {
@@ -17,6 +19,8 @@
     top: 40%;
     transform: translateY(-50%);
     z-index: 10;
+    cursor: pointer;
+    pointer-events: auto;
 }
 
 @media only screen and (max-width: 576px) {

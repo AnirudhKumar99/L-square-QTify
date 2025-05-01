@@ -73,8 +73,8 @@ const Carousel = ({ items, isSongsSection }) => {
       <Swiper
         initialSlide={0}
         modules={{ Navigation }}
-        slidesPerView={"auto"}
-        spaceBetween={"40"}
+        slidesPerView={"5"}
+        spaceBetween={"20"}
         allowTouchMove
       >
         <LeftArrowButton />
