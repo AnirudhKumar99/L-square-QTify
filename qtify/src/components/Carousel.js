@@ -10,14 +10,14 @@ import { useRef } from "react";
 function Carousel({ items, isSongsSection }) {
   const swiperRef = useRef(null);
   const params = {
-    slidesPerView: 5,
+    slidesPerView: 2,
     spaceBetween: 20,
     breakpoints: {
-      320: { slidesPerView: 2 },
-      640: { slidesPerView: 3 },
-      992: { slidesPerView: 4 },
-      1200: { slidesPerView: 5 },
-      1400: { slidesPerView: 6 },
+      320: { slidesPerView: 1 },
+      640: { slidesPerView: 2 },
+      992: { slidesPerView: 3 },
+      1200: { slidesPerView: 4 },
+      1400: { slidesPerView: 5 },
     },
   };
 
