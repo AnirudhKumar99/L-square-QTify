@@ -12,6 +12,7 @@ function Carousel({ items, isSongsSection }) {
   const params = {
     slidesPerView: 2,
     spaceBetween: 20,
+    loop: true,
     breakpoints: {
       320: { slidesPerView: 1 },
       640: { slidesPerView: 2 },
